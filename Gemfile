@@ -22,6 +22,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'factory_bot_rails', '~> 4.7'
+
 end
 
 group :development do
@@ -36,3 +37,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem "gritter", "1.2.0"
+gem 'administrate', '~> 0.9.0'
+gem 'bourbon'
