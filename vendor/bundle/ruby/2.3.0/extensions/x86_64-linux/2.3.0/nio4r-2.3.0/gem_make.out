@@ -1,5 +1,5 @@
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
-/data/bin/ruby -r ./siteconf20180323-4331-3ukd8u.rb extconf.rb
+/data/bin/ruby -r ./siteconf20180331-924-qdks1i.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for port_event_t in poll.h... no
@@ -19,12 +19,12 @@ make "DESTDIR=" clean
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
 make "DESTDIR="
 compiling bytebuffer.c
-compiling monitor.c
 compiling selector.c
 selector.c: In function ‘NIO_Selector_wakeup’:
 selector.c:484:5: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
      write(selector->wakeup_writer, "\0", 1);
      ^
+compiling monitor.c
 compiling nio4r_ext.c
 In file included from nio4r_ext.c:7:0:
 ../libev/ev.c:1836:31: warning: ‘ev_default_loop_ptr’ initialized and declared ‘extern’
@@ -74,4 +74,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
 make "DESTDIR=" install
-/data/bin/install-sh -c -m 0755 nio4r_ext.so ./.gem.20180323-4331-mdmq9l
+/data/bin/install-sh -c -m 0755 nio4r_ext.so ./.gem.20180331-924-17eaoh4

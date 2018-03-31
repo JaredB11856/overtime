@@ -1,5 +1,5 @@
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
-/data/bin/ruby -r ./siteconf20180323-4331-12mgwaj.rb extconf.rb
+/data/bin/ruby -r ./siteconf20180331-924-wr7h2n.rb extconf.rb
 checking for ffi_call() in -lffi... yes
 checking for ffi_closure_alloc()... yes
 checking for ffi_raw_call()... yes
@@ -21,20 +21,14 @@ make "DESTDIR=" clean
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
 make "DESTDIR="
-compiling ArrayType.c
-compiling MappedType.c
-compiling Struct.c
-compiling StructLayout.c
+compiling Buffer.c
 compiling Types.c
-compiling FunctionInfo.c
-compiling Function.c
-Function.c: In function ‘async_cb_event’:
-Function.c:569:9: warning: implicit declaration of function ‘rb_thread_call_without_gvl’ [-Wimplicit-function-declaration]
-         rb_thread_call_without_gvl(async_cb_wait, &w, async_cb_stop, &w);
-         ^
-compiling Thread.c
-compiling LastError.c
-compiling StructByReference.c
+compiling StructLayout.c
+compiling MappedType.c
+compiling Type.c
+compiling Variadic.c
+compiling DataConverter.c
+compiling Closure.c
 compiling Call.c
 In file included from Call.h:36:0,
                  from Function.h:48,
@@ -46,22 +40,28 @@ Thread.h:78:39: warning: implicit declaration of function ‘rb_thread_call_with
 Call.c:334:5: note: in expansion of macro ‘rbffi_thread_blocking_region’
      rbffi_thread_blocking_region(call_blocking_function, data, (void *) -1, NULL);
      ^
-compiling DataConverter.c
-compiling StructByValue.c
-compiling LongDouble.c
-compiling Buffer.c
-compiling DynamicLibrary.c
-compiling Closure.c
-compiling Type.c
-compiling AbstractMemory.c
-compiling Variadic.c
-compiling MethodHandle.c
-compiling Pointer.c
+compiling StructByReference.c
+compiling FunctionInfo.c
+compiling LastError.c
 compiling MemoryPointer.c
+compiling Struct.c
+compiling LongDouble.c
+compiling DynamicLibrary.c
+compiling ArrayType.c
+compiling StructByValue.c
+compiling AbstractMemory.c
 compiling ffi.c
+compiling Thread.c
 compiling Platform.c
+compiling Function.c
+Function.c: In function ‘async_cb_event’:
+Function.c:569:9: warning: implicit declaration of function ‘rb_thread_call_without_gvl’ [-Wimplicit-function-declaration]
+         rb_thread_call_without_gvl(async_cb_wait, &w, async_cb_stop, &w);
+         ^
+compiling Pointer.c
+compiling MethodHandle.c
 linking shared-object ffi_c.so
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
 make "DESTDIR=" install
-/data/bin/install-sh -c -m 0755 ffi_c.so ./.gem.20180323-4331-r9b0y6
+/data/bin/install-sh -c -m 0755 ffi_c.so ./.gem.20180331-924-1ywl8ft

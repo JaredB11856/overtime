@@ -1,5 +1,5 @@
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri
-/data/bin/ruby -r ./siteconf20180323-4331-hnqa9k.rb extconf.rb --use-system-libraries --with-xml2-config=/data/bin/xml2-config --with-xslt-config=/data/bin/xslt-config
+/data/bin/ruby -r ./siteconf20180331-924-hlvi82.rb extconf.rb --use-system-libraries --with-xml2-config=/data/bin/xml2-config --with-xslt-config=/data/bin/xslt-config
 checking if the C compiler accepts ... yes
 Building nokogiri using system libraries.
 checking for xmlParseDoc() in libxml/parser.h... yes
@@ -23,12 +23,20 @@ make "DESTDIR=" clean
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR="
-compiling xml_processing_instruction.c
-compiling xml_node.c
-compiling html_entity_lookup.c
-compiling xml_element_decl.c
-compiling html_document.c
+compiling nokogiri.c
+compiling html_element_description.c
 compiling xml_element_content.c
+compiling xml_element_decl.c
+compiling xml_sax_push_parser.c
+compiling xml_relax_ng.c
+compiling xml_reader.c
+compiling xml_xpath_context.c
+compiling xml_node_set.c
+compiling xml_syntax_error.c
+compiling xml_document_fragment.c
+compiling xml_document.c
+compiling xml_attribute_decl.c
+compiling xml_processing_instruction.c
 compiling xml_namespace.c
 xml_namespace.c: In function ‘part_of_an_xpath_node_set_eh’:
 xml_namespace.c:67:49: warning: passing argument 1 of ‘Nokogiri_namespace_eh’ from incompatible pointer type [-Wincompatible-pointer-types]
@@ -37,18 +45,10 @@ xml_namespace.c:67:49: warning: passing argument 1 of ‘Nokogiri_namespace_eh�
 xml_namespace.c:27:5: note: expected ‘xmlNodePtr {aka struct _xmlNode *}’ but argument is of type ‘struct _xmlNs *’
  int Nokogiri_namespace_eh(xmlNodePtr node)
      ^
-compiling xml_text.c
-compiling html_sax_parser_context.c
-compiling xml_xpath_context.c
-compiling xml_libxml2_hacks.c
-compiling nokogiri.c
-compiling xml_io.c
+compiling html_sax_push_parser.c
 compiling xml_comment.c
-compiling xml_reader.c
-compiling html_element_description.c
-compiling xml_node_set.c
-compiling xml_attribute_decl.c
-compiling xml_cdata.c
+compiling xml_attr.c
+compiling html_document.c
 compiling xslt_stylesheet.c
 In file included from /data/include/ruby-2.3.0/ruby.h:33:0,
                  from ./nokogiri.h:33,
@@ -74,24 +74,24 @@ xslt_stylesheet.c:230:21: warning: passing argument 1 of ‘rb_data_object_get�
 /data/include/ruby-2.3.0/ruby/ruby.h:1393:1: note: expected ‘VALUE {aka long unsigned int}’ but argument is of type ‘void *’
  rb_data_object_get(VALUE obj)
  ^
-compiling xml_attr.c
-compiling xml_sax_push_parser.c
+compiling xml_node.c
+compiling xml_io.c
+compiling html_sax_parser_context.c
+compiling xml_sax_parser.c
+compiling html_entity_lookup.c
+compiling xml_cdata.c
+compiling xml_sax_parser_context.c
+compiling xml_libxml2_hacks.c
+compiling xml_text.c
+compiling xml_encoding_handler.c
 compiling xml_schema.c
 compiling xml_entity_decl.c
-compiling xml_dtd.c
-compiling xml_syntax_error.c
-compiling xml_document_fragment.c
-compiling xml_sax_parser.c
-compiling html_sax_push_parser.c
-compiling xml_encoding_handler.c
-compiling xml_document.c
-compiling xml_relax_ng.c
 compiling xml_entity_reference.c
-compiling xml_sax_parser_context.c
+compiling xml_dtd.c
 linking shared-object nokogiri/nokogiri.so
 Cleaning files only used during build.
 rm -rf /app/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ports/archives
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR=" install
-/data/bin/install-sh -c -m 0755 nokogiri.so ./.gem.20180323-4331-ei06vj/nokogiri
+/data/bin/install-sh -c -m 0755 nokogiri.so ./.gem.20180331-924-ztoa8b/nokogiri
