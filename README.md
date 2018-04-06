@@ -22,5 +22,5 @@
 - X Icons from Font Awesome
 - X Update the styles for forms
 
-## Refactor TODOS:
-- X Refactor user association integration test in post_spec
+##  TODOS:
+- Integrate vlidation for phone attr in User:
