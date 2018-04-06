@@ -3,7 +3,6 @@
 ## Key requirement: company needs documentation that salaried employees did or did not get overtime each week
 
 ## Models
-
 - X Post -> date:date rationale:text
 - X User -> Devise
 - X AdminUser -> STI
@@ -17,10 +16,4 @@
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
-## UI:
-- X Bootstrap -> formatting
-- X Icons from Font Awesome
-- X Update the styles for forms
-
 ##  TODOS:
-- Integrate vlidation for phone attr in User:
