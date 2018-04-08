@@ -1,5 +1,5 @@
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
-/data/bin/ruby -r ./siteconf20180331-924-qdks1i.rb extconf.rb
+/data/bin/ruby -r ./siteconf20180408-925-uylrhj.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for port_event_t in poll.h... no
@@ -18,7 +18,6 @@ make "DESTDIR=" clean
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
 make "DESTDIR="
-compiling bytebuffer.c
 compiling selector.c
 selector.c: In function ‘NIO_Selector_wakeup’:
 selector.c:484:5: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
@@ -70,8 +69,9 @@ In file included from nio4r_ext.c:7:0:
 ../libev/ev.c:2520:11: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
            read (evpipe [0], &dummy, sizeof (dummy));
            ^
+compiling bytebuffer.c
 linking shared-object nio4r_ext.so
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/nio4r-2.3.0/ext/nio4r
 make "DESTDIR=" install
-/data/bin/install-sh -c -m 0755 nio4r_ext.so ./.gem.20180331-924-17eaoh4
+/data/bin/install-sh -c -m 0755 nio4r_ext.so ./.gem.20180408-925-ayonrb

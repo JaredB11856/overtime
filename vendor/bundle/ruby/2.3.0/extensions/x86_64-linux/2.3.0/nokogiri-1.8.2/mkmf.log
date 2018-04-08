@@ -1,4 +1,5 @@
 "cc -o conftest -I/data/include/ruby-2.3.0/x86_64-linux -I/data/include/ruby-2.3.0/ruby/backward -I/data/include/ruby-2.3.0 -I. -I/data/include -I/usr/include -I/data/include/ncurses   -O2 -I/usr/include/x86_64-linux-gnu -D_FORTIFY_SOURCE=2 -pthread -I/data/include -I/usr/include -I/data/include/ncurses -fPIC  conftest.c  -L. -L/data/lib -Wl,-rpath,/data/lib -L. -L/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu -L/data/lib -Wl,-R/data/lib -pthread -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/data/lib -L/data/lib -lruby  -lpthread -ldl -lcrypt -lm -lpthread -lrt  -lc "
+/data/lib/ruby/2.3.0/mkmf.rb:395: warning: Insecure world writable dir /app/vendor in PATH, mode 040777
 checked program was:
 /* begin */
 1: #include "ruby.h"

@@ -236,7 +236,7 @@ checked program was:
 /* end */
 
 "cc -o conftest -I/data/include/ruby-2.3.0/x86_64-linux -I/data/include/ruby-2.3.0/ruby/backward -I/data/include/ruby-2.3.0 -I. -I/data/include -I/data/include -I/usr/include -I/data/include/ncurses   -O2 -I/usr/include/x86_64-linux-gnu -D_FORTIFY_SOURCE=2 -pthread -I/data/include -I/usr/include -I/data/include/ncurses -fPIC  conftest.c  -L. -L/data/lib -Wl,-rpath,/data/lib -L. -L/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu -L/data/lib -Wl,-R/data/lib -pthread -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,-R/data/lib -L/data/lib    -lffi  -lffi -Wl,-rpath,/data/lib -L/data/lib -lruby -lffi  -lffi -lpthread -ldl -lcrypt -lm -lpthread -lrt  -lc"
-/tmp/ccHNrnLH.o: In function `t':
+/tmp/ccyb2PQX.o: In function `t':
 conftest.c:(.text+0x7): undefined reference to `rb_thread_blocking_region'
 collect2: error: ld returned 1 exit status
 checked program was:

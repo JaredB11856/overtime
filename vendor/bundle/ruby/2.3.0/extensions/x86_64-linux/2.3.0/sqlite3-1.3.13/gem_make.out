@@ -1,5 +1,6 @@
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.13/ext/sqlite3
-/data/bin/ruby -r ./siteconf20180331-924-8zsb5p.rb extconf.rb
+/data/bin/ruby -r ./siteconf20180408-925-12r3zs3.rb extconf.rb
+/data/lib/ruby/2.3.0/mkmf.rb:1547: warning: Insecure world writable dir /app/vendor in PATH, mode 040777
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
@@ -25,13 +26,13 @@ make "DESTDIR=" clean
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR="
-compiling sqlite3.c
+compiling backup.c
 compiling statement.c
 compiling database.c
-compiling backup.c
 compiling exception.c
+compiling sqlite3.c
 linking shared-object sqlite3/sqlite3_native.so
 
 current directory: /app/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR=" install
-/data/bin/install-sh -c -m 0755 sqlite3_native.so ./.gem.20180331-924-k47yx3/sqlite3
+/data/bin/install-sh -c -m 0755 sqlite3_native.so ./.gem.20180408-925-1kxfk0j/sqlite3
