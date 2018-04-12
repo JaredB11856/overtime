@@ -1,9 +1,4 @@
-@user = User.create(email: "test@test.com", 
-										password: "123456", 
-										password_confirmation: "123456", 
-										first_name: "Jon", 
-										last_name: "Snow",
-										phone: "2085690190")
+@user = User.create(email: "test@test.com", password: "123456", password_confirmation: "123456", first_name: "Jon", last_name: "Snow", phone: "2085690190")
 
 puts "1 User created"
 
@@ -27,5 +22,3 @@ puts "3 audit logs have been created"
 end
 
 puts "100 Posts have been created"
-
-  
