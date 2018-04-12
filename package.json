@@ -1,5 +1,8 @@
 {
   "name": "app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "cli-engine-command": "^9.0.7",
+    "cli-engine-config": "^3.5.0"
+  }
 }
