@@ -2,9 +2,9 @@
   <% msg_confirm_one = "I confirm that I did not perform any overtime for the week of:" %>
   <% msg_confirm_two = "Are you sure you want to confirm that you did not perform any overtime?" %>
 
-  <%= link_to "#{msg_confirm_one} #{pending_audit_confirmation.start_date}",
+  <%= link_to "#{msg_confirm_one} #{pending_audit_confirmation.start_date} through #{pending_audit_confirmation.start_date + 6.days}",
     confirm_audit_log_path(pending_audit_confirmation),
-    class: 'btn btn-primary btn-block btn-lg',
+    class: 'btn btn-primary btn-block btn-lg btn-employee-home',
     id: "confirm_#{pending_audit_confirmation.id}",
     data: { confirm: "#{msg_confirm_one}" } %>
 <% end %>
