@@ -22,9 +22,9 @@ describe 'Homepage' do
 
   visit root_path
 
-  click_on("confirm#{audit_log.id}")
+  click_on("confirm_#{audit_log.id}")
 
-  expect(audit_log.reload.status).to eq('confirmed.id')
+  expect(audit_log.reload.status).to eq('confirmed')
   end
 end
 #rspec spec/features/homepage_spec.rb
